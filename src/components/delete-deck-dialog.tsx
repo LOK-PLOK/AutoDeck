@@ -50,7 +50,7 @@ export default function DeleteDeckDialog({
   return (
       <DialogContent className="sm:max-w-[625px]">
         <DialogHeader>
-          <DialogTitle className="flex items-center text-red-600 mb-1">
+          <DialogTitle className="flex items-center text-red-900 mb-1">
             <Trash2 className="w-5 h-5 mr-2" />
             Delete this deck?
           </DialogTitle>
@@ -59,12 +59,12 @@ export default function DeleteDeckDialog({
           </DialogDescription>
         </DialogHeader>
         
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+        <div className="bg-red-300 border border-red-500 rounded-lg p-4">
           <div className="flex items-start space-x-3">
-            <AlertTriangle className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+            <AlertTriangle className="w-5 h-5 text-red-950 mt-0.5 flex-shrink-0" />
             <div>
-              <h4 className="font-medium text-red-800 mb-1">Warning: This action cannot be undone</h4>
-              <p className="text-sm text-red-700">
+              <h4 className="font-medium text-red-950 mb-1">Warning: This action cannot be undone</h4>
+              <p className="text-sm text-red-950">
                 You are about to delete this set and all of its data. No one will be able to access this set ever again.
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function DeleteDeckDialog({
             variant="destructive" 
             onClick={handleDelete}
             disabled={isDeleting}
-            className="bg-red-600 hover:bg-red-700"
+            className="bg-red-900 hover:bg-red-950"
           >
             {isDeleting ? "Deleting..." : "Delete Deck"}
           </Button>
